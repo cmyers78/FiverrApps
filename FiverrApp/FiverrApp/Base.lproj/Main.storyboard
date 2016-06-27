@@ -3,23 +3,45 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Fiverr Table View Controller-->
         <scene sceneID="KTu-gZ-stL">
             <objects>
-                <tableViewController id="4NP-tB-MOg" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pav-SP-3f5">
+                <tableViewController id="4NP-tB-MOg" customClass="FiverrTableViewController" customModule="FiverrApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pav-SP-3f5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="118" id="KA6-m8-asM">
-                                <rect key="frame" x="0.0" y="92" width="600" height="118"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="KA6-m8-asM" customClass="FiverrTableViewCell" customModule="FiverrApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KA6-m8-asM" id="EQW-g4-ats">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="117.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ueS-1F-crI">
+                                            <rect key="frame" x="18" y="28" width="150" height="143.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="O2x-Xb-OBr"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-Aa-9lW">
+                                            <rect key="frame" x="186" y="28" width="140" height="25"/>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                            <color key="textColor" red="0.29747406119999997" green="0.51690967229999996" blue="0.80506810900000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="y1y-Aa-9lW" firstAttribute="leading" secondItem="ueS-1F-crI" secondAttribute="trailing" constant="18" id="BIk-eN-pgK"/>
+                                        <constraint firstItem="ueS-1F-crI" firstAttribute="leading" secondItem="EQW-g4-ats" secondAttribute="leadingMargin" constant="10" id="FEb-E0-RyH"/>
+                                        <constraint firstItem="ueS-1F-crI" firstAttribute="top" secondItem="EQW-g4-ats" secondAttribute="topMargin" constant="20" id="RI4-U8-M9I"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ueS-1F-crI" secondAttribute="bottom" constant="20" id="RXG-Ev-JX1"/>
+                                        <constraint firstItem="y1y-Aa-9lW" firstAttribute="top" secondItem="EQW-g4-ats" secondAttribute="topMargin" constant="20" id="oC5-dP-Yu4"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -32,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVQ-wX-gJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="356"/>
+            <point key="canvasLocation" x="1032" y="333"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ffF-8P-EKt">
