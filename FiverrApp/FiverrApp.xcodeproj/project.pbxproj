@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C63E3D531D2183B40023A193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D521D2183B40023A193 /* AppDelegate.swift */; };
-		C63E3D551D2183B40023A193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D541D2183B40023A193 /* ViewController.swift */; };
 		C63E3D581D2183B40023A193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63E3D561D2183B40023A193 /* Main.storyboard */; };
 		C63E3D5A1D2183B40023A193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63E3D591D2183B40023A193 /* Assets.xcassets */; };
 		C63E3D5D1D2183B40023A193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63E3D5B1D2183B40023A193 /* LaunchScreen.storyboard */; };
 		C63E3D651D2184BA0023A193 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D641D2184BA0023A193 /* Category.swift */; };
+		C63E3D671D21862B0023A193 /* FiverrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C63E3D4F1D2183B40023A193 /* FiverrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiverrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63E3D521D2183B40023A193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C63E3D541D2183B40023A193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C63E3D571D2183B40023A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C63E3D591D2183B40023A193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63E3D5C1D2183B40023A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C63E3D5E1D2183B40023A193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63E3D641D2184BA0023A193 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiverrTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				C63E3D521D2183B40023A193 /* AppDelegate.swift */,
-				C63E3D541D2183B40023A193 /* ViewController.swift */,
-				C63E3D561D2183B40023A193 /* Main.storyboard */,
 				C63E3D641D2184BA0023A193 /* Category.swift */,
+				C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */,
+				C63E3D561D2183B40023A193 /* Main.storyboard */,
 				C63E3D591D2183B40023A193 /* Assets.xcassets */,
 				C63E3D5B1D2183B40023A193 /* LaunchScreen.storyboard */,
 				C63E3D5E1D2183B40023A193 /* Info.plist */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63E3D551D2183B40023A193 /* ViewController.swift in Sources */,
 				C63E3D531D2183B40023A193 /* AppDelegate.swift in Sources */,
 				C63E3D651D2184BA0023A193 /* Category.swift in Sources */,
+				C63E3D671D21862B0023A193 /* FiverrTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
