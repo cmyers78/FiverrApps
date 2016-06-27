@@ -11,5 +11,9 @@ import UIKit
 class FiverrTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var fiverrImage: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
 
+    @IBOutlet weak var descLabel: UILabel!
 }

@@ -12,6 +12,7 @@ class FiverrTableViewController: UITableViewController {
 
     var fiverrArray = [Category]()
     
+    var currentFiverr : Category?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,26 +64,36 @@ class FiverrTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FiverrTableViewCell
         
-        let currentFiverr = fiverrArray[indexPath.row]
+        self.currentFiverr = fiverrArray[indexPath.row]
         
-        cell.textLabel?.text = currentFiverr.name
-        cell.imageView?.image = UIImage(named: currentFiverr.imageNameString)
+        cell.nameLabel.text = self.currentFiverr?.name
+        cell.descLabel.text = self.currentFiverr?.descriptionString
         
-
-        // Configure the cell...
-
+        if let imageName = self.currentFiverr?.imageNameString {
+        cell.fiverrImage.image = UIImage(named: imageName)
+        }
+    
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.currentFiverr = fiverrArray[indexPath.row]
+        
+        performSegueWithIdentifier("fiverrSegue", sender: nil)
+        
+    }
  
-
- 
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "fiverrSegue" {
+            
+            if let segueController = segue.destinationViewController as? DetailViewController {
+                
+                segueController.theFiverr = self.currentFiverr
+            }
+        }
     }
-
+    
 }

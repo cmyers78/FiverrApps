@@ -14,6 +14,7 @@
 		C63E3D651D2184BA0023A193 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D641D2184BA0023A193 /* Category.swift */; };
 		C63E3D671D21862B0023A193 /* FiverrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */; };
 		C63E3D691D218D900023A193 /* FiverrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D681D218D900023A193 /* FiverrTableViewCell.swift */; };
+		C63E3D6E1D2195960023A193 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E3D6D1D2195960023A193 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C63E3D641D2184BA0023A193 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiverrTableViewController.swift; sourceTree = "<group>"; };
 		C63E3D681D218D900023A193 /* FiverrTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiverrTableViewCell.swift; sourceTree = "<group>"; };
+		C63E3D6D1D2195960023A193 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				C63E3D521D2183B40023A193 /* AppDelegate.swift */,
-				C63E3D641D2184BA0023A193 /* Category.swift */,
-				C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */,
+				C63E3D6B1D2190650023A193 /* Model */,
+				C63E3D6C1D21906C0023A193 /* Controller */,
 				C63E3D561D2183B40023A193 /* Main.storyboard */,
-				C63E3D681D218D900023A193 /* FiverrTableViewCell.swift */,
+				C63E3D6A1D21905B0023A193 /* View */,
 				C63E3D591D2183B40023A193 /* Assets.xcassets */,
 				C63E3D5B1D2183B40023A193 /* LaunchScreen.storyboard */,
 				C63E3D5E1D2183B40023A193 /* Info.plist */,
 			);
 			path = FiverrApp;
+			sourceTree = "<group>";
+		};
+		C63E3D6A1D21905B0023A193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C63E3D681D218D900023A193 /* FiverrTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C63E3D6B1D2190650023A193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C63E3D641D2184BA0023A193 /* Category.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C63E3D6C1D21906C0023A193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C63E3D661D21862B0023A193 /* FiverrTableViewController.swift */,
+				C63E3D6D1D2195960023A193 /* DetailViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 			files = (
 				C63E3D531D2183B40023A193 /* AppDelegate.swift in Sources */,
 				C63E3D691D218D900023A193 /* FiverrTableViewCell.swift in Sources */,
+				C63E3D6E1D2195960023A193 /* DetailViewController.swift in Sources */,
 				C63E3D651D2184BA0023A193 /* Category.swift in Sources */,
 				C63E3D671D21862B0023A193 /* FiverrTableViewController.swift in Sources */,
 			);
